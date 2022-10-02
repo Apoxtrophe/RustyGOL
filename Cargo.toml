@@ -1,0 +1,19 @@
+[package]
+name = "GOL11"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+grid = "0.8.1"
+rand = "0.8.5"
+piston = "0.53.1"
+piston_window = "0.124.0"
+minifb = "0.23.0"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
